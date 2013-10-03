@@ -6,8 +6,11 @@ html, button, input, select, textarea
 body
   color: #7e7a6b
   background: #dad4c0
-  font-size: 1em
-  line-height: 1.4
+  font-size: 16px
+  line-height: 1.5
+  font-family: "proxima-nova",sans-serif
+  a
+    color: #4D4836
 
 \::-moz-selection, ::selection
   background: #b3d4fc
@@ -43,12 +46,16 @@ textarea
   white-space: nowrap
   overflow: hidden
 
-body
-  font: 14px/22px Helvetica, Helvetica Neue, Arial
-
 .wrapper
   width: 1080px
   margin: 0 auto
+  h2
+    color: #332F1E
+    font-size: 2.5em
+    line-height: 1
+  hr
+    background: #C0B89D
+    border: 0
 
 .header
   position: fixed
@@ -58,7 +65,7 @@ body
 
 header
   position: relative
-  .dealer-login
+  .grower-login
     position: absolute
     right: 0
     top: 100px
@@ -69,6 +76,8 @@ header
     text-transform: uppercase
     text-decoration: none
     background: #233323
+    &:hover
+      background: #334B33
 
 #logo
   margin: 0
@@ -102,7 +111,7 @@ nav
           border-bottom: 5px solid #80af84
 
 .top
-  background: #eae4d1 url("../images/layout/photo-header.jpg") no-repeat bottom center
+  background: #C0B89D url("../images/layout/photo-header.jpg") no-repeat bottom center
   height: 500px
 
 .summary
@@ -120,7 +129,7 @@ nav
     font-weight: bold
     text-transform: uppercase
   p
-    width: 660px
+    width: 720px
 
 .main
   padding: 40px 0
@@ -133,32 +142,64 @@ nav
     text-align: center
     font-weight: bold
     font-size: 2em
-    padding-top: 100px
-    width: 240px
-    height: 25px
-    margin: 0
+    padding-top: 90px
+    width: 210px
+    height: 35px
   .section
     overflow: hidden
     padding: 20px 0
-    width: 980px
     margin: 0 auto
-    &.quality, &.growers
-      margin: 0 100px 0 0
-    &.safety
-      margin: 0 0 0 100px
 .quality
   .icon
     background-image: url("../images/layout/icon-check.png")
     float: left
 .safety
+  p
+    margin: 40px 0 0
   .icon
     background-image: url("../images/layout/icon-shield.png")
-    float: right
+    float: left
 .growers
   .icon
     background-image: url("../images/layout/icon-leaf.png")
     float: left
 
+.inquiry-block
+  background: #c0b89d
+  color: #332f1e
+  clear: both
+  text-align: center
+  padding: 20px
+  margin-top: 1em
+
+img
+  border: 5px solid #9C9577
+  &.pull-left
+    float: left
+    clear: right
+    margin: 0px 20px 0px 0
+  &.pull-right
+    float: right
+    clear: left
+    margin: 0px 0 20px 20px
+
+.products, .about, .services, .contact
+  overflow: hidden
+
+.about
+  img
+    &.pull-left
+      margin-top: 20px
+      margin-right: 30px
+      margin-bottom: 40px
+    &.pull-right
+      margin-left: 40px
+
+.services
+  img
+    &.pull-left
+      margin-top: 10px
+      margin-right: 20px
 .footer
   background: #dad4c0
   footer
