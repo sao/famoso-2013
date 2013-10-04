@@ -53,12 +53,17 @@ textarea
     color: #332F1E
     font-size: 2.5em
     line-height: 1
+    margin-top: 0em
+  .section
+    h2
+      margin-top: 1em
   hr
     background: #C0B89D
     border: 0
 
 .header
   position: fixed
+  z-index: 9999
   width: 100%
   background: #437c46
   height: 100px
@@ -145,17 +150,20 @@ nav
     padding-top: 90px
     width: 210px
     height: 35px
+    margin-right: 20px
   .section
     overflow: hidden
     padding: 20px 0
     margin: 0 auto
 .quality
+  p
+    margin: 25px 0 0
   .icon
     background-image: url("../images/layout/icon-check.png")
     float: left
 .safety
   p
-    margin: 40px 0 0
+    margin: 30px 0 0
   .icon
     background-image: url("../images/layout/icon-shield.png")
     float: left
@@ -173,7 +181,7 @@ nav
   margin-top: 1em
 
 img
-  border: 5px solid #9C9577
+  border: 5px solid #E0DBC5
   &.pull-left
     float: left
     clear: right
@@ -200,6 +208,38 @@ img
     &.pull-left
       margin-top: 10px
       margin-right: 20px
+
+.contact
+  .locations
+    overflow: hidden
+    margin-top: 40px
+  .locations-info
+    width: 280px
+    float: left
+  .locations-map
+    border: 5px solid #E0DBC5
+    width: 790px
+    float: right
+
+.contacts-container
+  overflow: hidden
+  width: 980px
+  margin: 20px 0
+  h3
+    width: 120px
+    float: left
+    text-align: right
+    margin-top: 0
+    margin-right: 160px
+  .contacts-group
+    width: 700px
+    float: left
+    overflow: hidden
+    p
+      float: left
+      width: 233px
+      margin: 0 0 20px
+
 .footer
   background: #dad4c0
   footer

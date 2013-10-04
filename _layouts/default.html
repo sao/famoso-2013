@@ -53,11 +53,11 @@
       <footer class="wrapper">
         <div class="pull-left">
           <ul>
-            <li class="home"><a href="#">Home</a></li>
-            <li class="about"><a href="#">About</a></li>
-            <li class="services"><a href="#">Services</a></li>
-            <li class="products"><a href="#">Products</a></li>
-            <li class="contact"><a href="#">Contact</a></li>
+            <li class="home"><a href="/">Home</a></li>
+            <li class="about"><a href="/about">About</a></li>
+            <li class="services"><a href="/services">Services</a></li>
+            <li class="products"><a href="/products">Products</a></li>
+            <li class="contact"><a href="/contact">Contact</a></li>
           </ul>
           <p class="copyright">
             Copyright &copy; 2013 Famoso Nut Company, LLC. All rights reserved.
@@ -78,6 +78,36 @@
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
     <script src="js/global.js"></script>
+
+    {% if page.has_map %}
+      <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+      <script type="text/javascript">
+        $(document).ready(function() {
+          var famoso_lat_lang = new google.maps.LatLng(35.602393, -119.192054);
+            var myOptions = {
+              zoom: 12,
+              center: famoso_lat_lang,
+              mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+          var marker = new google.maps.Marker({
+                position: famoso_lat_lang,
+                map: map,
+                title:"Famoso Nut Company, LLC"
+          });
+          var contentString = '<div>'+
+              '<h3 style="margin:0">Famoso Nut Company, LLC</h3>'+
+              '<p>32331 Famoso Road<br/>McFarland, CA 93250<br/>(661) 399-9697</p>'+
+              '</div>';
+          var infowindow = new google.maps.InfoWindow({
+              content: contentString
+          });
+          google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map,marker);
+          });
+        })
+      </script>
+    {% endif %}
 
     <script>
         var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

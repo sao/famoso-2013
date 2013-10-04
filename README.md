@@ -1,3 +1,3 @@
 Famoso Nut
 ============
-Website markup for Famoso Nut.
+Website for Famoso Nut. Static site generated via Jekyll.
