@@ -6,7 +6,7 @@
     <meta name="description" content="Famoso Nut Company is a locally-owned Almond huller, sheller, handler, and sales organization dedicated to the sale of quality Almond products.">
     <meta name="viewport" content="width=device-width">
 
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="{{ site.domain }}/css/style.css">
 
     <script type="text/javascript" src="//use.typekit.net/yed7aoq.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -25,17 +25,17 @@
     <div class="container header">
       <header class="wrapper clearfix">
       <h1 id="logo" class="hide-text">
-        <a href="/">
+        <a href="{{ site.domain }}">
           Famoso Nut
         </a>
       </h1>
       <nav>
         <ul>
-          <li class="home"><a href="/">Home</a></li>
-          <li class="about"><a href="/about">About</a></li>
-          <li class="services"><a href="/services">Services</a></li>
-          <li class="products"><a href="/products">Products</a></li>
-          <li class="contact"><a href="/contact">Contact</a></li>
+          <li class="home"><a href="{{ site.domain }}/">Home</a></li>
+          <li class="about"><a href="{{ site.domain }}/about">About</a></li>
+          <li class="services"><a href="{{ site.domain }}/services">Services</a></li>
+          <li class="products"><a href="{{ site.domain }}/products">Products</a></li>
+          <li class="contact"><a href="{{ site.domain }}/contact">Contact</a></li>
         </ul>
       </nav>
       <a class="grower-login" href="http://reports.famosonut.com" target="_blank">Grower Login</a>
@@ -53,11 +53,11 @@
       <footer class="wrapper">
         <div class="pull-left">
           <ul>
-            <li class="home"><a href="/">Home</a></li>
-            <li class="about"><a href="/about">About</a></li>
-            <li class="services"><a href="/services">Services</a></li>
-            <li class="products"><a href="/products">Products</a></li>
-            <li class="contact"><a href="/contact">Contact</a></li>
+            <li class="home"><a href="{{ site.domain }}">Home</a></li>
+            <li class="about"><a href="{{ site.domain }}/about">About</a></li>
+            <li class="services"><a href="{{ site.domain }}/services">Services</a></li>
+            <li class="products"><a href="{{ site.domain }}/products">Products</a></li>
+            <li class="contact"><a href="{{ site.domain }}/contact">Contact</a></li>
           </ul>
           <p class="copyright">
             Copyright &copy; 2013 Famoso Nut Company, LLC. All rights reserved.
@@ -75,7 +75,7 @@
     </div>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+    <script>window.jQuery || document.write('<script src="{{ site.domain }}/js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
     <script src="js/global.js"></script>
 
