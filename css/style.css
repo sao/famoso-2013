@@ -430,19 +430,6 @@ textarea {
 
 header {
   position: relative; }
-  header .grower-login {
-    position: absolute;
-    right: 0;
-    top: 100px;
-    color: #d3dfbb;
-    display: block;
-    font-size: 14px;
-    padding: 8px 20px;
-    text-transform: uppercase;
-    text-decoration: none;
-    background: #233323; }
-    header .grower-login:hover {
-      background: #334b33; }
 
 #logo {
   margin: 0;
