@@ -29,6 +29,13 @@
           Famoso Nut
         </a>
       </h1>
+
+      <button type="button" class="mobile-nav-toggle desktop-hidden">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
       <nav>
         <ul>
           <li class="home"><a href="{{ site.domain }}">Home</a></li>
@@ -44,6 +51,7 @@
 
     <div class="container top">
       <!-- #photo -->
+      <img src="{{ site.domain }}/images/layout/photo-header.jpg" class="desktop-hidden">
     </div>
 
     {{ content }}
@@ -78,7 +86,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="{{ site.domain }}/js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
-    <script src="js/global.js"></script>
+    <script src="{{ site.domain }}/js/global.js"></script>
 
     {% if page.has_map %}
       <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
