@@ -583,6 +583,20 @@ img {
       width: 233px;
       margin: 0 0 20px; }
 
+.login-form {
+  overflow: hidden; }
+  .login-form input {
+    padding: 10px;
+    border: 1px solid #989381; }
+    .login-form input.form-submit {
+      background: #332f1e;
+      color: #eae4d1;
+      border: 0; }
+  .login-form .help-text {
+    display: block;
+    margin-top: 10px;
+    font-size: 10px; }
+
 .footer {
   background: #dad4c0; }
   .footer footer {
